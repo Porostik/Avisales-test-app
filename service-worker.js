@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Avisales-test-app/precache-manifest.580f55e4a7d8d2e67b07a07e7cbb7ffe.js"
+  "/Avisales-test-app/precache-manifest.d0eb22475a4496aa67b9bac425819567.js"
 );
 
 self.addEventListener('message', (event) => {

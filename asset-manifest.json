@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/Avisales-test-app/static/css/main.e527cbe5.chunk.css",
-    "main.js": "/Avisales-test-app/static/js/main.25c847ab.chunk.js",
-    "main.js.map": "/Avisales-test-app/static/js/main.25c847ab.chunk.js.map",
+    "main.css": "/Avisales-test-app/static/css/main.41e6b68a.chunk.css",
+    "main.js": "/Avisales-test-app/static/js/main.e00c6b89.chunk.js",
+    "main.js.map": "/Avisales-test-app/static/js/main.e00c6b89.chunk.js.map",
     "runtime-main.js": "/Avisales-test-app/static/js/runtime-main.bf9daeca.js",
     "runtime-main.js.map": "/Avisales-test-app/static/js/runtime-main.bf9daeca.js.map",
     "static/js/2.6d7c8fc9.chunk.js": "/Avisales-test-app/static/js/2.6d7c8fc9.chunk.js",
     "static/js/2.6d7c8fc9.chunk.js.map": "/Avisales-test-app/static/js/2.6d7c8fc9.chunk.js.map",
     "index.html": "/Avisales-test-app/index.html",
-    "precache-manifest.580f55e4a7d8d2e67b07a07e7cbb7ffe.js": "/Avisales-test-app/precache-manifest.580f55e4a7d8d2e67b07a07e7cbb7ffe.js",
+    "precache-manifest.d0eb22475a4496aa67b9bac425819567.js": "/Avisales-test-app/precache-manifest.d0eb22475a4496aa67b9bac425819567.js",
     "service-worker.js": "/Avisales-test-app/service-worker.js",
-    "static/css/main.e527cbe5.chunk.css.map": "/Avisales-test-app/static/css/main.e527cbe5.chunk.css.map",
+    "static/css/main.41e6b68a.chunk.css.map": "/Avisales-test-app/static/css/main.41e6b68a.chunk.css.map",
     "static/js/2.6d7c8fc9.chunk.js.LICENSE.txt": "/Avisales-test-app/static/js/2.6d7c8fc9.chunk.js.LICENSE.txt",
     "static/media/logo.5d1dfa0e.svg": "/Avisales-test-app/static/media/logo.5d1dfa0e.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.bf9daeca.js",
     "static/js/2.6d7c8fc9.chunk.js",
-    "static/css/main.e527cbe5.chunk.css",
-    "static/js/main.25c847ab.chunk.js"
+    "static/css/main.41e6b68a.chunk.css",
+    "static/js/main.e00c6b89.chunk.js"
   ]
 }
