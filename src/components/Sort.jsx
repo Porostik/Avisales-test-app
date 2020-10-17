@@ -30,10 +30,4 @@ const Sort = React.memo(function () {
   );
 });
 
-Sort.propTypes = {
-  enableSort: PropTypes.array,
-  onChangeSort: PropTypes.func,
-  activeSort: PropTypes.string,
-};
-
 export default Sort;

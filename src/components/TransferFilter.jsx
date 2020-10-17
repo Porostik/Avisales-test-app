@@ -5,7 +5,7 @@ import { setFilter, setAllFilters } from '../actions/filters';
 import { useDispatch, useSelector } from 'react-redux';
 import { enableFilters } from '../services/filtersProps';
 
-const TransferFilter = React.memo(function () {
+function TransferFilter() {
   const dispatch = useDispatch();
 
   const { activeTransfers } = useSelector(({ filters }) => ({
@@ -57,17 +57,6 @@ const TransferFilter = React.memo(function () {
       ))}
     </div>
   );
-});
-
-TransferFilter.propTypes = {
-  enableFilters: PropTypes.array,
-  activeTransfers: PropTypes.array,
-  onSetFilters: PropTypes.func,
-};
-
-TransferFilter.defaultProps = {
-  enableFilters: [],
-  activeTransfers: [],
-};
+}
 
 export default TransferFilter;

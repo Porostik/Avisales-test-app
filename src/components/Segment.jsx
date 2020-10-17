@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 function Segment({ countriesCodes, arrivalTimePeriod, flightTime, stopsCount, stops }) {
   return (
@@ -18,5 +19,13 @@ function Segment({ countriesCodes, arrivalTimePeriod, flightTime, stopsCount, st
     </>
   );
 }
+
+Segment.protoTypes = {
+  countriesCodes: PropTypes.string,
+  arrivalTimePeriod: PropTypes.string,
+  flightTime: PropTypes.string,
+  stopsCount: PropTypes.string,
+  stops: PropTypes.string,
+};
 
 export default Segment;
