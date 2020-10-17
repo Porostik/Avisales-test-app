@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7260bbcf1afd7fce230f208b5d97323a",
+    "revision": "0be50c717c06b017de756007017f071c",
     "url": "/Avisales-test-app/index.html"
   },
   {
-    "revision": "13405193b350d2c99853",
+    "revision": "936b55f445cee449c899",
     "url": "/Avisales-test-app/static/css/main.41e6b68a.chunk.css"
   },
   {
-    "revision": "91133ceda80b7991132e",
-    "url": "/Avisales-test-app/static/js/2.6d7c8fc9.chunk.js"
+    "revision": "877b0470b3d0f4061d1b",
+    "url": "/Avisales-test-app/static/js/2.d78e3624.chunk.js"
   },
   {
     "revision": "3043e3e727d80f353557f855ab1ce92b",
-    "url": "/Avisales-test-app/static/js/2.6d7c8fc9.chunk.js.LICENSE.txt"
+    "url": "/Avisales-test-app/static/js/2.d78e3624.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "13405193b350d2c99853",
-    "url": "/Avisales-test-app/static/js/main.e00c6b89.chunk.js"
+    "revision": "936b55f445cee449c899",
+    "url": "/Avisales-test-app/static/js/main.7b5bee21.chunk.js"
   },
   {
     "revision": "f7f49f2c50eaa673a5ae",
