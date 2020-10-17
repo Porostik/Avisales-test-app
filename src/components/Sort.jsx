@@ -1,15 +1,20 @@
 import React from 'react';
 import classNames from 'class-names';
 import PropTypes from 'prop-types';
+import { useDispatch, useSelector } from 'react-redux';
+import { enableSort } from '../services/filtersProps.js';
+import { setSort } from '../actions/filters';
 
-function Sort({ enableSort, onChangeSort, activeSort }) {
-  const onSortClick = (sort) => {
-    if (activeSort === sort) {
-      onChangeSort(null);
-      return;
-    }
-    onChangeSort(sort);
-  };
+const Sort = React.memo(function () {
+  const dispatch = useDispatch();
+
+  const { activeSort } = useSelector(({ filters }) => ({
+    activeSort: filters.sort,
+  }));
+
+  const onSortClick = React.useCallback((sort) => {
+    dispatch(setSort(sort));
+  });
 
   return (
     <div className="sort">
@@ -23,7 +28,7 @@ function Sort({ enableSort, onChangeSort, activeSort }) {
       ))}
     </div>
   );
-}
+});
 
 Sort.propTypes = {
   enableSort: PropTypes.array,

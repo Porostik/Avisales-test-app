@@ -99,6 +99,7 @@ body {
         cursor: pointer;
         padding: 15px 57px;
         max-height: 53px;
+        user-select: none;
 
         &.active {
           background-color: #2196f3;

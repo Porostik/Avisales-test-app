@@ -1,8 +1,8 @@
 {
-  "homepage": "http://porostik.github.io/avisales-test",
   "name": "avia",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://porostik.github.io/Avisales-test-app/",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",

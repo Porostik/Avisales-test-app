@@ -1,11 +1,31 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'class-names';
+import { setFilter, setAllFilters } from '../actions/filters';
+import { useDispatch, useSelector } from 'react-redux';
+import { enableFilters } from '../services/filtersProps';
 
-function TransferFilter({ enableFilters, onSetFilters, activeTransfers }) {
-  const onFilterClick = (filter) => {
-    onSetFilters(filter);
-  };
+const TransferFilter = React.memo(function () {
+  const dispatch = useDispatch();
+
+  const { activeTransfers } = useSelector(({ filters }) => ({
+    activeTransfers: filters.transfers,
+  }));
+
+  const onFilterClick = React.useCallback((filterProp) => {
+    if (filterProp === 'all') {
+      if (activeTransfers.length === enableFilters.length - 1) {
+        dispatch(setAllFilters([]));
+        return;
+      }
+
+      let filersArr = enableFilters.filter((item) => item.prop !== 'all').map((item) => item.prop);
+      dispatch(setAllFilters(filersArr));
+      return;
+    }
+
+    dispatch(setFilter(filterProp));
+  });
 
   return (
     <div className="transfer-filter">
@@ -37,7 +57,7 @@ function TransferFilter({ enableFilters, onSetFilters, activeTransfers }) {
       ))}
     </div>
   );
-}
+});
 
 TransferFilter.propTypes = {
   enableFilters: PropTypes.array,

@@ -1,8 +1,24 @@
 import React from 'react';
 import TicketItem from './TicketItem';
 import TicketLoader from './TicketItem/TicketLoader';
+import { fetchTickets, getId } from '../actions/tickets';
+import { useDispatch, useSelector } from 'react-redux';
+import { selectFormatTickets } from '../selectors';
 
-function TicketsList({ tickets, isLoaded }) {
+const TicketsList = React.memo(function () {
+  const dispatch = useDispatch();
+
+  const { searchId, isLoaded } = useSelector(({ tickets }) => ({
+    searchId: tickets.searchId,
+    isLoaded: tickets.isLoaded,
+  }));
+
+  const tickets = useSelector(selectFormatTickets);
+
+  React.useEffect(() => {
+    searchId ? dispatch(fetchTickets(searchId)) : dispatch(getId());
+  }, [searchId, dispatch]);
+
   return (
     <div className="tickets-list">
       {isLoaded ? (
@@ -20,6 +36,6 @@ function TicketsList({ tickets, isLoaded }) {
       )}
     </div>
   );
-}
+});
 
 export default TicketsList;
